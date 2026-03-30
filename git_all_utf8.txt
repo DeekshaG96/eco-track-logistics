@@ -1,0 +1,15 @@
+﻿* 5c3be0d docs: standardize repository metadata to enterprise open-source level
+* 8767b2a Polish submission deck and demo assets
+* 37ac212 Build Eco-Track AI logistics prototype
+* fd07e7f docs: add comprehensive ABOUT.md mission and vision statement
+* ea72fb5 docs: overhaul repository for open-source Enterprise standards (README, LICENSE, CONTRIBUTING)
+* 193bd4a feat: integrate secure env variables and live Leaflet map visualization
+* 5eb3d18 feat: massive enterprise refactor (Project44/Flexport compliance, GLEC emission standards, Cargo Risk UI)
+* a8bb0ee feat: integrate enterprise IoT telemetry mocks and L2 Smart Contract ESG audit UI
+* ed439c5 docs: inject advanced enterprise ecosystem roadmap into presentation deck
+* df5a179 feat: complete Eco-Track AI production build and presentation assets
+* 167e949 chore(docs): programmatic injection of production URLs into final deck
+* 3ea9ac7 Hotfix: Resolve JSX template literal parsing error and enable Advanced UI
+* d93f265 Hotfix: Resolve JSX template literal parsing error
+* 1959499 Feature: Advanced dynamic UI update with map components and new cargo constraints
+* fcafc01 Hotfix: Correct Gemini API endpoint to gemini-2.5-flash

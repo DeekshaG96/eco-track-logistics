@@ -1,0 +1,27 @@
+{
+  "status": "success",
+  "result": [
+    {
+      "projectId": "aura-hub-6a166",
+      "projectNumber": "27325789402",
+      "displayName": "Aura Hub",
+      "name": "projects/aura-hub-6a166",
+      "resources": {
+        "hostingSite": "aura-hub-6a166"
+      },
+      "state": "ACTIVE",
+      "etag": "1_85bc855b-c97c-4f35-8f36-b3d2a1993df5"
+    },
+    {
+      "projectId": "techspire-13303696-1c68d",
+      "projectNumber": "415138077122",
+      "displayName": "Firebase app",
+      "name": "projects/techspire-13303696-1c68d",
+      "resources": {
+        "hostingSite": "techspire-13303696-1c68d"
+      },
+      "state": "ACTIVE",
+      "etag": "1_67620b60-ab16-4db2-9c3e-937ae8f19844"
+    }
+  ]
+}
