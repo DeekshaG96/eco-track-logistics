@@ -1,28 +1,31 @@
-# 🌍 About Eco-Track AI
+# 🌍 About Eco-Track Resilient
 
-## The Core Vision
-**Eco-Track AI** was founded with a singular, uncompromising vision: to permanently eliminate the systemic "blind spots" in global logistics carbon accounting. We believe that sustainable supply chains should not be an afterthought or a complex regulatory burden; they should be the default, automated standard for all enterprise routing.
+## The Next-Gen Vision
+**Eco-Track Resilient** is an advanced supply chain intelligence platform designed to eliminate the devastating impact of global logistics disruptions. While traditional systems focus only on cost and speed, we integrate **Resilience** as a core operational mandate. We believe that a truly sustainable supply chain must be inherently resilient—capable of dynamic recovery in the face of environmental and operational shocks.
 
-## The Problem
-Modern supply chain management operates on two primary vectors: **Cost** and **Speed**. 
-Historically, logistics planners have lacked real-time, actionable visibility into the environmental impact of their routing decisions at the *point of dispatch*. By the time emissions data is calculated and audited, months have passed, the carbon is already in the atmosphere, and corporations are left scrambling to buy offsets to meet their ESG (Environmental, Social, and Governance) commitments.
-Furthermore, "Greenwashing" remains a massive issue. Companies claim sustainable practices but lack the immutable, mathematical proof required by top-tier auditors.
+## The Challenge: Supply Chain Fragility
+Modern logistics networks manage millions of concurrent shipments across highly volatile networks. Disruptions like monsoons, port strikes, and sudden infrastructure failures are often identified too late, leading to cascading delays, billions in lost revenue, and massive "idle-fuel" emissions. 
 
-## The Eco-Track Solution
-Rather than fighting the existing system, Eco-Track AI sits directly on top of it as a preemptive intelligence layer. 
+Historically, managers have lacked:
+1. **Unstructured Intelligence**: The ability to process news and weather alerts into actionable routing weights.
+2. **Dynamic Recovery**: Mechanisms to instantly reroute assets *before* a bottleneck cascades.
+3. **ROI Transparency**: Clear data on the financial and temporal value of choosing a "longer but safer" path.
 
-1. **Predictive AI Routing (Gemini 2.5 Flash):** Before a single truck is dispatched, our platform analyzes the exact origin, destination, and cargo classification. It simulates hundreds of potential vectors across different transport modes (Diesel, Electric Vans, Hybrid Drones).
-2. **Dynamic Risk Heuristics:** The system doesn't just calculate distance; it actively assesses weather patterns, geopolitical risks, and traffic congestion to provide statistical ETA confidence intervals.
-3. **Immutable Accountability:** By mathematically calculating Scope 3 (GLEC) emissions and generating simulated L2 Polygon Smart Contracts, we provide a blueprint for tampering-proof carbon audit trails.
+## The Resilient Solution
+Eco-Track Resilient sits as a preemptive intelligence layer atop existing logistics stacks:
 
-## The Future Roadmap
-This prototype, built originally for the **Google Solution Challenge 2026**, represents Phase 1 of our Enterprise Architecture. 
+1. **🛡️ Resilience Intelligence (Gemini 1.5 Flash):** Our AI engine processes multifaceted transit data—from monsoon patterns to port labor news—to assess "Resilience Risk" at every node.
+2. **⚡ War Room Simulation:** We provide a "Tactical Sandbox" where operators can simulate disruptions (monsoons, strikes, bridge collapses) to stress-test their networks and validate recovery routes.
+3. **📊 Dynamic ROI Tracking:** By calculating the delta between a "Baseline Failure" and an "AI-Recovered Success," we provide immutable proof of business value—measuring exactly how much time and profit was guarded by the system.
 
-**Phase 2 & 3 include:**
-- **On-chain Deployment:** Transitioning our mock L2 Smart Contracts to the Polygon Mainnet.
-- **Flutter Fleet Companion:** Deploying a mobile companion app for drivers to ensure the AI's predictive models match edge-telemetry from the actual trucks.
-- **Live IoT Sensor Mesh:** Integrating directly with shipping container IoT thermometers and weight sensors for purely autonomous dispatching.
+## The Roadmap
+Built for the **Google Solution Challenge 2026**, Eco-Track Resilient is currently in Phase 1 (Tactical MVP).
+
+**Future Milestones:**
+- **Live IoT Mesh Integration**: Real-time telemetry from container sensors (thermal, shock, location).
+- **Blockchain Manifest Anchoring**: Immutable audit trails for resilient decision-making on Layer-2 networks.
+- **Predictive Modal Shifting**: Automatically switching from Road to Air or Rail based on forward-looking risk models.
 
 ---
 
-*Eco-Track AI represents the convergence of Machine Learning, Decentralized Ledgers, and Global Logistics.*
+*Eco-Track Resilient: Engineering the future of unbreakable global logistics.*

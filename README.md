@@ -1,50 +1,44 @@
-# 🌍 Eco-Track AI: Predictive ESG Logistics Platform
+# 🌍 Eco-Track Resilient: Dynamic Supply Chain Optimization
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-8E75B2?style=flat)
-![Status](https://img.shields.io/badge/Status-Enterprise_Ready-brightgreen.svg)
+![Gemini](https://img.shields.io/badge/Gemini_1.5_Flash-8E75B2?style=flat)
+![Challenge](https://img.shields.io/badge/Google_Solution_Challenge-2026-brightgreen.svg)
 
-Eco-Track AI is a military-grade, interactive supply chain visualization dashboard built for the **Google Solution Challenge 2026**. It transforms raw logistics data into actionable, map-driven ESG (Environmental, Social, and Governance) routing models.
+**Eco-Track Resilient** is a mission-critical logistics intelligence platform built to solve the core problem of supply chain fragility. Architected for the **Google Solution Challenge 2026**, it shifts logistics from passive monitoring to **preemptive, AI-driven dynamic optimization.**
 
-## 🚀 Live Enterprise Application
+## 🚀 Live Enterprise Prototype
 - **Production URL:** [https://techspire-13303696-1c68d.web.app](https://techspire-13303696-1c68d.web.app)
-- **Demo Video:** [ecotrack_final_demo.webp](demo/ecotrack_final_demo.webp)
+- **Problem Statement:** Resilient Logistics & Dynamic Supply Chain Optimization.
 
 ---
 
-## 🏗️ Core Architecture & Features
+## 🏗️ Core Innovation Architecture
 
-Eco-Track AI has evolved from a simple CO2 calculator into a deeply integrated SaaS platform modeled after industry leaders like Project44 and Flexport.
+### 1. 🛡️ Resilience Intelligence (RI) Layer
+Powered by **Google Gemini 1.5 Flash**, the system processes unstructured real-world data (monsoon alerts, port strike news, infrastructure failures) to assign dynamic **Risk Weights** to supply chain nodes. It doesn't just map routes; it understands the *resilience cost* of every transit segment.
 
-### 1. 🗺️ Live Leaflet Geo-Routing
-Integrated `react-leaflet` to visualize real-time polyline routes over OpenStreetMap tiles. We use **Gemini 2.5 Flash** as an autonomous geocoding agent, returning exact coordinate arrays (`[lat, lng]`) for mapping without the need for external MAP APIs.
+### 2. ⚡ War Room: Dynamic Optimization Simulator
+Designed for stakeholders to stress-test their networks. The "War Room" allows users to simulate sudden disruptions—like a bridge collapse or a labor strike—and watch the AI instantly execute a **Critical Recovery Bypass** with updated ETAs and risk assessments.
 
-### 2. 🛡️ Scope 3 (GLEC) Emissions Compliance
-The AI reasoning engine evaluates route options specifically against the **Global Logistics Emissions Council (GLEC)** standards, guaranteeing the sustainability matrix is audit-ready for ESG reporting.
+### 3. 📈 ROI & Profit Guarding Monitor
+To prove business value, the platform tracks **Resiliency ROI**. Every time a disruption is avoided, the system calculates the "Latency Loss Prevented" (Hours and Dollars), providing immutable proof of the AI's impact on the bottom line.
 
-### 3. 📡 Live Fleet Telemetry (IoT Sync)
-Seamlessly mocks live onboard weigh-station scaling. Toggle the "IoT Sync" button on the dashboard to override manual inputs and watch the platform dynamically respond to shifting payload constraints in real-time.
+### 4. 🗺️ Live Tactical Geo-Routing
+Integrated `react-leaflet` visualization showing **Risk Zones** and **Resilient Vectors**. The UI uses a high-contrast Enterprise Dark Mode to ensure data readability for logistics coordinators in high-pressure environments.
 
-### 4. 🔗 L2 Smart Contract ESG Anchoring (Mock)
-To combat corporate "greenwashing", operators who select the "Greenest Choice" option can click the **Issue ESG Smart Contract** button. This mimics hashing the routing manifest (SHA-256) and anchoring it to a Layer-2 blockchain for an unalterable audit trail.
-
-### 5. 🌡️ Cargo Classification & Compliance Overrides
-Users can classify payloads as **Standard**, **Perishables / Cold Chain**, or **Hazardous Materials (HAZMAT)**. The AI dynamically adapts its risk heuristics, enforcing continuous thermal monitoring alerts and geopolitical risk overlays.
+---
 
 ## 🛠️ Tech Stack
-- **Frontend Core:** React.js, Vite, Tailwind CSS (Glassmorphism & "Terminal Dark Mode")
-- **Mapping:** Leaflet, React-Leaflet
-- **AI Infrastructure:** Google Gemini 2.5 Flash API (Structured JSON Inference)
-- **Deployment:** Google Cloud (Firebase Hosting)
-- **Resiliency:** Zero-Crash Offline Fallback Engine
+- **Frontend:** React.js (Vite), Tailwind CSS (Enhanced Enterprise Glassmorphism)
+- **AI Core:** Google Gemini 1.5 Flash (Intelligence Layer & ROI Analysis)
+- **Mapping:** Leaflet, React-Leaflet (Strategic Risk Overlays)
+- **Persistence:** Firebase (Hosting & Analytics)
 
 ---
 
-## 💻 Local Development Setup
-
-Clone the repository and install dependencies to run the Enterprise Logistics Platform locally:
+## 💻 Local Quickstart
 
 ```bash
 git clone https://github.com/DeekshaG96/eco-track-logistics.git
@@ -52,18 +46,17 @@ cd eco-track-logistics
 npm install
 ```
 
-### Environment Variables
-Create a `.env` file in the root directory and add your Gemini API key:
+### Environment Configuration
+Create a `.env` file:
 ```env
-VITE_GEMINI_API_KEY="your_api_key_here"
+VITE_GEMINI_API_KEY="your_api_key"
 ```
-*(Note: If the key is omitted or the API rate limits, the application automatically pivots to the local Zero-Crash Fallback Engine, maintaining 100% demo uptime).*
 
-### Booting the Development Server
+### Boot Strategy
 ```bash
 npm run dev
 ```
 
 ---
 
-*Architected and engineered autonomously for the Google Solution Challenge 2026.*
+*Engineered to solve the Resilience Gap in Global Logistics. Built for the Google Solution Challenge 2026.*
