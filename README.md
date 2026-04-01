@@ -40,7 +40,7 @@ The dashboard overlays origins, destinations, route paths, and risk zones on an 
 ## Tech Stack
 - Frontend: React, Vite, Tailwind CSS
 - AI: Google Gemini 1.5 Flash
-- Mapping: Leaflet, React Leaflet
+- Mapping: Google Maps JavaScript API
 - Hosting: Firebase Hosting
 
 ## Local Quickstart
@@ -50,11 +50,17 @@ cd eco-track-logistics
 npm install
 ```
 
-Create a `.env` file:
+Create a `.env.local` file:
 
 ```env
-VITE_GEMINI_API_KEY="your_api_key"
+VITE_GEMINI_API_KEY="your_gemini_api_key"
+VITE_GOOGLE_MAPS_API_KEY="your_restricted_browser_key"
 ```
+
+`.env.local` is ignored by Git in this repo, so your real keys stay out of GitHub.
+
+## Security Note
+This app now uses Google Maps in the browser, so keep the key only in `.env.local` for local work and use a browser key restricted by HTTP referrers to your own domains, such as your Firebase Hosting URL and `http://localhost:5173`. Browser map keys are not true secrets in production bundles, so domain restriction is the real protection layer.
 
 Start the app:
 

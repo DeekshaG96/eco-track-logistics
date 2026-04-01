@@ -12,17 +12,6 @@ import {
   ShieldAlert,
   Wind,
 } from 'lucide-react'
-import {
-  Circle,
-  MapContainer,
-  Marker,
-  Polyline,
-  Popup,
-  TileLayer,
-  useMap,
-} from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
-import L from 'leaflet'
 
 import {
   buildFallbackAnalysis,
@@ -33,28 +22,10 @@ import {
   formatShortDate,
   normalizeModelResult,
 } from './lib/resilienceEngine'
-
-delete L.Icon.Default.prototype._getIconUrl
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-})
-
-function MapController({ center, zoom }) {
-  const map = useMap()
-
-  useEffect(() => {
-    if (center && center[0] && center[1]) {
-      map.setView(center, zoom || 6, { animate: true })
-    }
-  }, [center, zoom, map])
-
-  return null
-}
+import GoogleRouteMap from './components/GoogleRouteMap'
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY?.trim() || ''
+const MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY?.trim() || ''
 
 export default function App() {
   const [origin, setOrigin] = useState('Kochi')
@@ -453,48 +424,15 @@ export default function App() {
               )}
             </div>
 
-            <MapContainer
-              center={[12.9716, 77.5946]}
-              zoom={5}
-              className="h-full w-full grayscale-[0.2]"
-            >
-              <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" />
-              {results && (
-                <>
-                  <MapController center={results.originCoords} />
-                  <Marker position={results.originCoords}>
-                    <Popup>Origin: {origin}</Popup>
-                  </Marker>
-                  <Marker position={results.destinationCoords}>
-                    <Popup>Terminal: {destination}</Popup>
-                  </Marker>
-                  <Polyline
-                    positions={results.routePath}
-                    color="#10b981"
-                    weight={4}
-                    opacity={0.6}
-                  />
-                  {results.resilienceReport.riskNodes.map((node, index) => (
-                    <Circle
-                      key={`${node.reason}-${index}`}
-                      center={[node.lat, node.lng]}
-                      radius={30000}
-                      pathOptions={{
-                        color: '#f59e0b',
-                        fillColor: '#f59e0b',
-                        fillOpacity: 0.2,
-                      }}
-                    >
-                      <Popup>
-                        <span className="font-bold text-amber-600">
-                          ALERT: {node.reason}
-                        </span>
-                      </Popup>
-                    </Circle>
-                  ))}
-                </>
-              )}
-            </MapContainer>
+            <GoogleRouteMap
+              apiKey={MAPS_API_KEY}
+              originLabel={origin}
+              destinationLabel={destination}
+              originCoords={results?.originCoords}
+              destinationCoords={results?.destinationCoords}
+              routePath={results?.routePath}
+              riskNodes={results?.resilienceReport?.riskNodes}
+            />
           </div>
 
           {results && (

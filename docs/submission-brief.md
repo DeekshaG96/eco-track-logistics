@@ -20,7 +20,7 @@ A simple rules engine can rank lanes, but it struggles to interpret unstructured
 
 ## Judging Alignment
 ### Technical Merit
-The prototype combines React, Vite, Firebase Hosting, Gemini, and Leaflet into a working logistics control surface with simulated resilience analytics and graceful fallback behavior.
+The prototype combines React, Vite, Firebase Hosting, Gemini, and Google Maps into a working logistics control surface with simulated resilience analytics and graceful fallback behavior.
 
 ### User Experience
 The interface is designed as an operator dashboard: shipment inputs on the left, live tactical map in the center, and historical recovery log on the right, which makes the story easy to demo under time pressure.
